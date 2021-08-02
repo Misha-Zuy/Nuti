@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/noUiSlider-15.1.1/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Welcome</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container align-self-center">
+                        <a class="navbar-brand me-auto" href="index.html"><img src="/img/icon/logo__general.svg"
+                                alt=""></a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center justify-content-md-between"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mx-0 mx-md-5 mb-lg-0 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="all__kinds.html">All kinds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" id="btnContact" class="btn__contact me-4" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="@mdo">Contact us</a>
+                                <a href="cart.html"
+                                    class="cart__elipse d-flex justify-content-center align-items-center position-relative ">
+                                    <span class="cart__badge position-absolute rounded-circle bg-danger"><span
+                                            class="visually-hidden">непрочитанные сообщения</span></span>
+                                    <img src="/img/icon/cart__general.svg" width="18px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="contactus__modal modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="contactus__content modal-content">
+                <div class="contactus__header modal-header">
+                    <button type="button" class="contactus__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="contactus__body modal-body pb-0">
+                    <form class="pb-0">
+                        <img class="img-fluid rounded mx-auto d-block mb-4" src="/img/icon/illustration__icon.svg"
+                            width="261px" alt="">
+                        <div class="contactus__form ">
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Email:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/159-email 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="email" value="">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Comment:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/162-edit 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactus__footer modal-footer row text-center">
+                    <div class="m-0 col-12"><button type=" button"
+                            class="contactus__btnmodal  btn btn-primary  m-0 text">Send</button></div>
+                    <div class="contactus__text col-12 m-0 mt-2">
+                        <p>Our specialists work 24/7 especially for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTRO -->
+    <div class="intro" data-aos="fade-in">
+        <div class="container d-flex justify-content-center justify-content-xl-center text-center text-xl-start">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 align-self-center">
+                    <h1 class="m-0" data-aos="zoom-in">Nuts are good for <br> your health</h1>
+                    <p class="general__text" data-aos="zoom-in">A very large assortment and the best prices. <br> Will
+                        you find better?
+                        Write to us </p>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="all__kinds.html" class="btn__primary " role="button">Choise a
+                                nuts</a>
+                            <a href="#what__good"><img id="iconArrowMain" class="icon__arrowmain mx-4"
+                                    src="/img/icon/arrow__down.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-xl-block">
+                <div class="col">
+                    <img id="imgGeneral" src="/img/img__general.png" class="img-fluid img-general"
+                        data-aos="zoom-in-right" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What are nuts good for? -->
+    <section>
+        <div class="container">
+            <div class="row text-center text-xl-start">
+                <div class="col-12">
+                    <h2 data-aos="fade-right" id="what__good">What are <span class="excretion__piece">nuts good</span>
+                        for?
+                    </h2>
+                    <p data-aos="fade-right" class="subtitle__text">There are many nutrients in nuts that help your body
+                    </p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-xl-5 text-center text-xl-start">
+                    <img data-aos="zoom-in" id="imgGoodFor" src="/img/img__vitamine.png" class="img-fluid" width="527px"
+                        alt="">
+                </div>
+                <div class="col-12 col-xl-7 mt-4">
+                    <div class="row">
+                        <div class="col-12 d-sm-flex justify-content-center justify-content-xl-start">
+                            <div data-aos="zoom-out" data-aos-delay="0"
+                                class="col-12 col-sm-6 col-md-4 offset-xl-1 me-0 me-xl-4 me-xxl-0 d-flex justify-content-center justify-content-xl-start">
+                                <div class="use__ful1primary p-3">
+                                    <div class="good__health">
+                                        <div class="info__elipse ">
+                                            <img src="/img/icon/icon__heart.svg" width="18.69px" alt="">
+                                        </div>
+                                        <h5 class="mt-4">For good health</h5>
+                                        <p class="sab__card">Nuts have the highest <br> content of polyunsaturated
+                                            <br>
+                                            fatty acids,
+                                            including
+                                            linoleic <br> acid.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="250"
+                                class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-auto d-flex justify-content-center justify-content-xl-start">
+                                <div class="use__fulsecondary p-3 ">
+                                    <div class="for__children">
+                                        <div class="info__elipse">
+                                            <img src="/img/icon/small__child.svg" width="25px" alt="">
+                                        </div>
+                                        <h5 class="mt-4">Useful for children</h5>
+                                        <p class="sab__card">They are a good source of <br> folic acid, which is
+                                            <br>
+                                            extremely
+                                            important for <br> children .
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 d-sm-flex justify-content-center justify-content-xl-start">
+                            <div data-aos="zoom-out" data-aos-delay="350"
+                                class="col-12 col-sm-6 col-md-4 offset-xl-3 me-0 me-xl-4 me-xxl-0 d-flex justify-content-center justify-content-xl-start">
+                                <div class="use__fulsecondary p-3">
+                                    <div class="reduce__cholesterol">
+                                        <div class="info__elipse ">
+                                            <img src="/img/icon/icon__ca.svg" width="25" alt="">
+                                        </div>
+                                        <h5 class="mt-4">Reduce cholesterol</h5>
+                                        <p class="sab__card">Essential fatty acids in <br> almonds help cleanse the
+                                            <br>
+                                            body and lower bad <br> cholesterol levels.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-out" data-aos-delay="450"
+                                class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-auto d-flex justify-content-center justify-content-xl-start">
+                                <div class="use__fulsecondary p-3 ">
+                                    <div class="improves__eyesight">
+                                        <div class="info__elipse ">
+                                            <img src="/img/icon/icon__vision.svg" width="25px" alt="">
+                                        </div>
+                                        <h5 class="mt-4">Improves eyesight</h5>
+                                        <p class="sab__card">Lutein and zeaxanthin are <br> immune-enhancing <br>
+                                            carotenoids.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefit in buying up to 25% -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div data-aos="fade-in" class="info__baner">
+                        <div class="buner__big p-5 d-none d-xl-block">
+                            <h1 class="mb-5">Benefit in buying <br> <span class="baner__upto">up to 25%</span></h1>
+                            <a href="all__kinds.html" class="btn__primary" role="button">Go to product</a>
+                        </div>
+                        <div class="buner__small pb-5 p-0 p-sm-5 text-center d-block d-xl-none">
+                            <h1 class="mb-5">Benefit in buying <br> <span class="baner__upto">up to 25%</span></h1>
+                            <a href="all__kinds.html" class="btn__primary" role="button">Go to product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products of the week -->
+    <section>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center text-xl-start">
+                    <h2 data-aos="fade-right">Products of <span class="excretion__piece">the week</span> </h2>
+                    <p data-aos="fade-right" class="subtitle__text m-0">The nuts that are most popular of the week are
+                        located <br> here
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-xl-center">
+                <div
+                    class="col-12 col-xl-3 offset-0 offset-xxl-1 d-flex justify-content-center justify-content-xl-start">
+                    <div class="card h-100" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-between align-items-center p-0 mt-3">
+                            <div class="sale__number rounded-end d-flex justify-content-center align-items-center">
+                                -14 %</div>
+                            <a href="#" class="me-3" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Contains the glycoside amygdalin, which is easily decomposed into sugar"><img
+                                    src="/img/icon/inform__about.svg" alt=""></a>
+                        </div>
+                        <div class="card-body text-center p-0 mt-1">
+                            <img src="/img/Nuts/img__almond.png" width="175px" height="155px" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center text-uppercase mb-2">Almond</p>
+                            <div class="card-body d-flex justify-content-center align-items-center p-0 mb-3">
+                                <p class="card-title m-0">$3.40</p>
+                                <p class="card-textprice text-decoration-line-through ms-2 mb-0">$3.90</p>
+                            </div>
+                            <p class="card-textweight mb-2">Weight</p>
+                            <div class="card-body p-0 mb-3">
+                                <a href="#" class="card-link chosen m-0">100 g</a>
+                                <a href="#" class="card-link mx-2">200 g</a>
+                                <a href="#" class="card-link m-0">300 g</a>
+                            </div>
+                            <div class="card-body p-0 ">
+                                <a href="#" class="card-link m-0">500 g</a>
+                                <a href="#" class="card-link mx-2">1 kg</a>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 py-3 text-center">
+                            <a type="button" href="#" class="card__button">Add to Bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-xl-3 my-3 my-xl-0 mx-xl-4 mx-xxl-0 d-flex justify-content-center justify-content-xl-start">
+                    <div class="card h-100" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-end align-items-center p-0 mt-3">
+                            <a href="#" class="me-3" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Contains the glycoside amygdalin, which is easily decomposed into sugar"><img
+                                    src="/img/icon/inform__about.svg" alt=""></a>
+                        </div>
+                        <div class="card-body text-center p-0 mt-1">
+                            <img src="/img/Nuts/img__walnuts.png" width="175px" height="155px" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center text-uppercase mb-2">Walnuts</p>
+                            <div class="card-body d-flex justify-content-center align-items-center p-0 mb-3">
+                                <p class="card-title m-0">$3.20</p>
+                            </div>
+                            <p class="card-textweight mb-2">Weight</p>
+                            <div class="card-body p-0 mb-3">
+                                <a href="#" class="card-link chosen m-0">100 g</a>
+                                <a href="#" class="card-link mx-2">200 g</a>
+                                <a href="#" class="card-link m-0">300 g</a>
+                            </div>
+                            <div class="card-body p-0 ">
+                                <a href="#" class="card-link m-0">500 g</a>
+                                <a href="#" class="card-link mx-2">1 kg</a>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 py-3 text-center">
+                            <a type="button" href="#" class="card__button">Add to Bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex justify-content-center justify-content-xl-start">
+                    <div class="card h-100" style="width: 18rem;">
+                        <div class="card-header d-flex justify-content-between align-items-center p-0 mt-3">
+                            <div class="sale__number rounded-end d-flex justify-content-center align-items-center">
+                                -4 %</div>
+                            <a href="#" class="me-3" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Contains the glycoside amygdalin, which is easily decomposed into sugar"><img
+                                    src="/img/icon/inform__about.svg" alt=""></a>
+                        </div>
+                        <div class="card-body text-center p-0 mt-1">
+                            <img src="/img/SetsNuts/set__beginer.png" width="160px" height="155px" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center text-uppercase mb-2">Beginer</p>
+                            <div class="card-body d-flex justify-content-center align-items-center p-0 mb-3">
+                                <p class="card-title m-0">$16.50</p>
+                                <p class="card-textprice text-decoration-line-through ms-2 mb-0">$17.20</p>
+                            </div>
+                            <p class="card-textweight mb-2">Weight</p>
+                            <div class="card-body p-0 mb-3">
+                                <a href="#" class="card-link chosen m-0">1 kg</a>
+                                <a href="#" class="card-link mx-2">2 kg</a>
+                                <a href="#" class="card-link m-0">3 kg</a>
+                            </div>
+                            <div class="card-body p-0 ">
+                                <a href="#" class="card-link m-0">4 kg</a>
+                                <a href="#" class="card-link mx-2">6 kg</a>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 py-3 text-center">
+                            <a type="button" href="#" class="card__button">Add to Bag</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-xl-2 mt-4 mt-xl-0 next__moreProd d-flex align-items-center justify-content-center justify-content-xl-start">
+                    <a href="all__sets.html"
+                        class="more__products d-flex align-items-center justify-content-center"><img id="arrowGreen"
+                            class="arrow__green" src="/img/icon/arrow__green.svg" alt=""></a>
+                    <p class="text__moreproducts mb-0 ms-4">More products</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Why us? -->
+    <section>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center text-xl-start">
+                    <h2 data-aos="fade-right">Why<span class="excretion__piece"> us </span>? </h2>
+                    <p data-aos="fade-right" class="subtitle__text m-0">We have been selling nuts for 10 years</p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center justify-content-xl-start">
+                <div data-aos="zoom-in-right" class="col-12 col-xl-6 text-center text-xl-start mb-5 mb-5">
+                    <img src="/img/img__whyus.png" class="img-fluid " alt="">
+                </div>
+                <div class="col-auto offset-xl-1 ">
+                    <div class="whyus__linear position-relative ">
+                        <div id="whyusBigelipse1" class="whyus__bigelipse1 position-absolute top-0 start-0 translate-middle d-flex
+                         justify-content-center align-items-center" style="background: #D2D2D2;">
+                            <div class="whyus__smallelipse"></div>
+                        </div>
+                        <div id="whyusBigelipse2" class="whyus__bigelipse2 position-absolute top-50 start-0 translate-middle d-flex
+                        justify-content-center align-items-center">
+                            <div class="whyus__smallelipse"></div>
+                        </div>
+                        <div id="whyusBigelipse3" class="whyus__bigelipse3 position-absolute top-100 start-0 translate-middle d-flex
+                       justify-content-center align-items-center">
+                            <div class="whyus__smallelipse"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-xl-4 mt-5 mt-xl-0">
+                    <div class="whyus__dignity position-relative d-flex justify-content-center">
+                        <div id="whyusDignity1"
+                            class="whyus__dignity1 position-absolute top-0 start-0 translate-middle-y ms-2 ms-xl-5 mt-2 mt-xl-4" ">
+                            <h3 class=" whyus__title1">Quality product
+                            </h3>
+                            <p class="whyus__subtitle1 m-0">All types of nuts
+                                undergo triple cleaning and <br> high-quality storage
+                            </p>
+                        </div>
+                        <div id="whyusDignity2"
+                            class="whyus__dignity2 position-absolute top-50 start-0 translate-middle-y ms-2 ms-xl-5 mt-0 mt-xl-4">
+                            <h3 class="whyus__title2">Low prices
+                            </h3>
+                            <p class="whyus__subtitle2 m-0">
+                                Our prices are the most favorable for you
+                            </p>
+                        </div>
+                        <div id="whyusDignity3"
+                            class="whyus__dignity3 position-absolute top-100 start-0 translate-middle-y ms-2 ms-xl-5 mt-0 mt-xl-4">
+                            <h3 class="whyus__title3">Profitable terms
+                            </h3>
+                            <p class="whyus__subtitle3 m-0">
+                                We return the money if the goods are damaged
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div data-aos="fade-up" id="form" class="col-12 main__form text-center p-5">
+                    <h2>If you have any questions, write, we <br> will answer them</h2>
+                    <p>Our specialists work 24/7 especially for you</p>
+                    <div class="form__lowpart d-lg-flex justify-content-center mt-4 mt-lg-5">
+                        <div class="col-12 col-lg-3 form-floating ">
+                            <input type="email" class="form-control shadow-none" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label class="text-start" for="floatingInput">Email</label>
+                        </div>
+                        <div class="col-12 col-lg-3 form-floating mt-2 mt-lg-0 mx-lg-4">
+                            <textarea class="form-control shadow-none" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label class="text-start" for="floatin gTextarea">Your messege</label>
+                        </div>
+                        <div
+                            class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0">
+                            <button type="submit" class="form__button d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#formModal">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="form__modal modal fade з-0" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="formmod__dialog modal-dialog modal-dialog-centered">
+            <div class="formmod__content modal-content">
+                <div class="formmod__header modal-header">
+                    <button type="button" class="formmod__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="formmod__body modal-body text-center pb-4">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div id="formmodCheckbox"
+                            class="formmod__checkbox d-flex justify-content-center align-items-center">
+                            <div class="checkbox__mod"><img src="/img/icon/icon__incheckbox.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <h3 id="checkBoxTitle">Your message has been sent</h3>
+                    <p id="formmodText" class="formmod__text mb-0">On average, we respond within 24 hours after sending
+                        a message.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 text-center text-lg-start">
+                    <a href="#"><img src="/img/icon/logo__general.svg" alt=""></a>
+                    <p class="sub__logo mt-3">A global company that specializes in <br> all types of nuts and
+                        delivers
+                        them
+                        all <br> over the
+                        world</p>
+                    <a class="sub-text" href="#">
+                        <p>nute.sall@netex</p>
+                    </a>
+                </div>
+                <div class=" col-12 col-lg-7 mb-3 mb-lg-0">
+                    <nav class="navbar navbar-expand-sm ">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse d-flex justify-content-center justify-content-lg-start"
+                                id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link" aria-current="page" href="all__kinds.html">All kinds</a>
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center">
+                    <div class="social__network position-relative">
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-0 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__email.svg" width="13px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-50 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__telega.svg" width="14px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center position-absolute top-50 start-100 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__facebook.svg" width="7.52px" alt=""></a>
+                    </div>
+                </div>
+                <div class="p-2 text-center mt-4 mt-lg-0">
+                    <div class="footer__linear "></div>
+                    <p class="my-3"><span class="footer__nuts">© Nuts.</span> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/4b23c663e0.js" crossorigin="anonymous"></script>
+    <script src="Bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/anime.min.js"></script>
+    <script src="/noUiSlider-15.1.1/distribute/nouislider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

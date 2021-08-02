@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/noUiSlider-15.1.1/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>About us</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container align-self-center">
+                        <a class="navbar-brand me-auto" href="index.html"><img src="/img/icon/logo__general.svg"
+                                alt=""></a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center justify-content-md-between"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mx-0 mx-md-5 mb-lg-0 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="all__kinds.html">All kinds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" id="btnContact" class="btn__contact me-4" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="@mdo">Contact us</a>
+                                <a href="cart.html"
+                                    class="cart__elipse d-flex justify-content-center align-items-center position-relative ">
+                                    <span class="cart__badge position-absolute rounded-circle bg-danger"><span
+                                            class="visually-hidden">непрочитанные сообщения</span></span>
+                                    <img src="/img/icon/cart__general.svg" width="18px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="contactus__modal modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="contactus__content modal-content">
+                <div class="contactus__header modal-header">
+                    <button type="button" class="contactus__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="contactus__body modal-body pb-0">
+                    <form class="pb-0">
+                        <img class="img-fluid rounded mx-auto d-block mb-4" src="/img/icon/illustration__icon.svg"
+                            width="261px" alt="">
+                        <div class="contactus__form ">
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Email:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/159-email 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="email" value="">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Comment:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/162-edit 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactus__footer modal-footer row text-center">
+                    <div class="m-0 col-12"><button type=" button"
+                            class="contactus__btnmodal btn btn-primary  m-0 text">Send</button></div>
+                    <div class="contactus__text col-12 m-0 mt-2">
+                        <p>Our specialists work 24/7 especially for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our team -->
+    <section class="bg-back">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-12 text-center text-lg-start">
+                    <h2 data-aos="fade-right">Our <span class="excretion__piece">team</span></h2>
+                    <p data-aos="fade-right" class="subtitle__text">We do everything to make you happy</p>
+                </div>
+                <div class="card__team col-12 col-md-6 col-xxl-3 d-flex justify-content-center">
+                    <div class="team__person">
+                        <div data-aos="fade-down" data-aos-anchor-placement="bottom-up"
+                            class="card__teamphoto1 text-center position-relative">
+                            <div class="elipse__info position-absolute ">
+                                <p class="card__teamtitle mb-0">Jack Tomson</p>
+                                <p class="card__teamsubtitle m-0">Founder</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="200"
+                            class="card__teamfooter d-flex justify-content-center mt-4 ">
+                            <a class="socialnetwork__human" href="#"><img src="/img/icon/Social Network/icon__insta.svg"
+                                    alt=""></a>
+                            <a class="socialnetwork__human mx-4" href="#"><img
+                                    src="/img/icon/Social Network/icon__twitter.svg" alt=""></a>
+                            <a class="socialnetwork__human" href="#"><img
+                                    src="/img/icon/Social Network/icon__facebool.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__team col-12 col-md-6 col-xxl-3 mt-5 mt-md-0 d-flex justify-content-center">
+                    <div class="team__person">
+                        <div data-aos="fade-down" data-aos-anchor-placement="bottom-bottom"
+                            class="card__teamphoto2 text-center me-0 position-relative">
+                            <div class="elipse__info position-absolute">
+                                <p class="card__teamtitle mb-0">Marina Chekan</p>
+                                <p class="card__teamsubtitle m-0">Manager</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="350"
+                            class="card__teamfooter d-flex justify-content-center mt-4">
+                            <a class="socialnetwork__human" href="#"><img src="/img/icon/Social Network/icon__insta.svg"
+                                    alt=""></a>
+                            <a class="socialnetwork__human mx-4" href="#"><img
+                                    src="/img/icon/Social Network/icon__liledin.svg" alt=""></a>
+                            <a class="socialnetwork__human" href="#"><img
+                                    src="/img/icon/Social Network/icon__facebool.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__team col-12 col-md-6 col-xxl-3 mt-5 mt-xxl-0 d-flex justify-content-center">
+                    <div class="team__person">
+                        <div data-aos="fade-down" data-aos-anchor-placement="bottom-up"
+                            class="card__teamphoto3 text-center me-0 position-relative">
+                            <div class="elipse__info position-absolute">
+                                <p class="card__teamtitle mb-0">Angel Betison</p>
+                                <p class="card__teamsubtitle m-0">Co-founder</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="500"
+                            class="card__teamfooter d-flex justify-content-center mt-4">
+                            <a class="socialnetwork__human" href="#"><img src="/img/icon/Social Network/icon__insta.svg"
+                                    alt=""></a>
+                            <a class="socialnetwork__human mx-4" href="#"><img
+                                    src="/img/icon/Social Network/icon__twitter.svg" alt=""></a>
+                            <a class="socialnetwork__human" href="#"><img
+                                    src="/img/icon/Social Network/icon__facebool.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__team col-12 col-md-6 col-xxl-3 mt-5 mt-xxl-0 d-flex justify-content-center">
+                    <div class="team__person">
+                        <div data-aos="fade-down" data-aos-anchor-placement="bottom-up"
+                            class="card__teamphoto4 text-center me-0 position-relative">
+                            <div class="elipse__info position-absolute">
+                                <p class="card__teamtitle mb-0">Edvard Gus</p>
+                                <p class="card__teamsubtitle m-0">Full Stack Designer</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="650"
+                            class="card__teamfooter d-flex justify-content-center mt-4">
+                            <a class="socialnetwork__human" href="#"><img src="/img/icon/Social Network/icon__vk.svg"
+                                    alt=""></a>
+                            <a class="socialnetwork__human mx-4" href="#"><img
+                                    src="/img/icon/Social Network/icon__twitter.svg" alt=""></a>
+                            <a class="socialnetwork__human" href="#"><img
+                                    src="/img/icon/Social Network/icon__facebool.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Results for this year -->
+    <section>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6 d-none d-lg-block">
+                    <img data-aos="fade-right" data-aos-delay="200" class="img-fluid" src="/img/img__results.png"
+                        alt="">
+                </div>
+                <div class="col-12 col-lg-6 text-center text-xxl-start">
+                    <h2 data-aos="fade-right">Results for <span class="excretion__piece">this year</span></h2>
+                    <p data-aos="fade-right" class="subtitle__text">These are our results that we have achieved in 1
+                        year</p>
+                    <div id="indicatorsThisyear"
+                        class="indicators__thisyear row d-flex justify-content-center justify-content-xxl-start">
+                        <div data-aos="zoom-in" data-aos-delay="200"
+                            class="indicator position-relative text-center pt-1 mb-5 mb-sm-0">
+                            <div class="indicator__title">167 <span class="indicator__subtle">+</span></div>
+                            <div class="indicator__subtitle">Thousand sales</div>
+                            <div
+                                class="indicator__elipsemain position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="indicator__elipsesec d-flex align-items-center justify-content-center">
+                                    <img src="/img/icon/icon__cart_indicator.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="350"
+                            class="indicator position-relative text-center pt-1 ms-4 me-4 me-lg-0 mx-xxl-3">
+                            <div class="indicator__title">27 <span class="indicator__subtle">+</span></div>
+                            <div class="indicator__subtitle">employees</div>
+                            <div
+                                class="indicator__elipsemain position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="indicator__elipsesec d-flex align-items-center justify-content-center">
+                                    <img src="/img/icon/icon__man_indicator.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="500"
+                            class="indicator position-relative text-center pt-1 mt-5 mt-md-0 mt-lg-5 mt-xxl-0">
+                            <div class="indicator__title">$280 <span class="indicator__subtle">k</span></div>
+                            <div class="indicator__subtitle">income</div>
+                            <div
+                                class="indicator__elipsemain position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="indicator__elipsesec d-flex align-items-center justify-content-center">
+                                    <img src="/img/icon/icon__graph_indicator.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where are we ?  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 data-aos="fade-right" data-aos-delay="200"><span class="excretion__piece">Where</span> are we ?
+                    </h2>
+                    <p data-aos="fade-right" class="subtitle__text">Very comfortable place</p>
+                </div>
+                <div class="col-sm-10 offset-md-1">
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 text-center text-lg-start">
+                    <a href="index.html"><img src="/img/icon/logo__general.svg" alt=""></a>
+                    <p class="sub__logo mt-3">A global company that specializes in <br> all types of nuts and
+                        delivers
+                        them
+                        all <br> over the
+                        world</p>
+                    <a class="sub-text" href="#">
+                        <p>nute.sall@netex</p>
+                    </a>
+                </div>
+                <div class=" col-12 col-lg-7 mb-3 mb-lg-0">
+                    <nav class="navbar navbar-expand-sm ">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse d-flex justify-content-center justify-content-lg-start"
+                                id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link" aria-current="page" href="all__kinds.html">All kinds</a>
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center">
+                    <div class="social__network position-relative">
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-0 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__email.svg" width="13px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-50 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__telega.svg" width="14px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center position-absolute top-50 start-100 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__facebook.svg" width="7.52px" alt=""></a>
+                    </div>
+                </div>
+                <div class="p-2 text-center mt-4 mt-lg-0">
+                    <div class="footer__linear "></div>
+                    <p class="my-3"><span class="footer__nuts">© Nuts.</span> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIdEPCFxNv3cqgJDQg0CLn7lUpLodEh4A&callback=initMap">
+        </script>
+    <script src="https://kit.fontawesome.com/4b23c663e0.js" crossorigin="anonymous"></script>
+    <script src="Bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

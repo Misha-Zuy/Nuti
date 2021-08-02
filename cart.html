@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/noUiSlider-15.1.1/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container align-self-center">
+                        <a class="navbar-brand me-auto" href="index.html"><img src="/img/icon/logo__general.svg"
+                                alt=""></a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center justify-content-md-between"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mx-0 mx-md-5 mb-lg-0 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="all__kinds.html">All kinds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" id="btnContact" class="btn__contact me-4" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="@mdo">Contact us</a>
+                                <a href=""
+                                    class="cart__elipse d-flex justify-content-center align-items-center position-relative ">
+                                    <span class="cart__badge position-absolute rounded-circle bg-danger"><span
+                                            class="visually-hidden">непрочитанные сообщения</span></span>
+                                    <img src="/img/icon/cart__general.svg" width="18px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="contactus__modal modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="contactus__content modal-content">
+                <div class="contactus__header modal-header">
+                    <button type="button" class="contactus__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="contactus__body modal-body pb-0">
+                    <form class="pb-0">
+                        <img class="img-fluid rounded mx-auto d-block mb-4" src="/img/icon/illustration__icon.svg"
+                            width="261px" alt="">
+                        <div class="contactus__form ">
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Email:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/159-email 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="email" value="">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Comment:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/162-edit 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactus__footer modal-footer row text-center">
+                    <div class="m-0 col-12"><button type=" button"
+                            class="contactus__btnmodal btn btn-primary  m-0 text">Send</button></div>
+                    <div class="contactus__text col-12 m-0 mt-2">
+                        <p>Our specialists work 24/7 especially for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bag of goods -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="bag__goods col-lg-12">
+                        <div class="bag__top p-4 d-md-flex justify-content-md-between align-items-center">
+                            <h2 class="text-center text-md-start mb-4 mb-md-0">Bag of goods </h2>
+                            <div class="bug__button d-flex justify-content-center justify-content-md-start">
+                                <a class="bagbtn__delete d-flex justify-content-center align-items-center"
+                                    href="#">Delete</a>
+                                <a class="bagbtn__creatset d-flex justify-content-center align-items-center ms-3"
+                                    href="#">+
+                                    Creat a
+                                    set</a>
+                            </div>
+                        </div>
+                        <div class="bagline__entaerly "></div>
+                        <div class="p-4  d-block d-md-none">
+                            <div class="bag__prodmob bagprod__sumup pb-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/img/Nuts/img__almond.png" alt="">
+                                    <div class="form-check d-flex justify-content-start align-items-center p-0 ms-3">
+                                        <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="d-flex justify-content-between my-3">
+                                        <p class="oneproduct__title mb-0">Name:</p>
+                                        <p class="text-uppercase value__text text-start ms-5 mb-0">Almond</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="oneproduct__title mb-0">Price:</p>
+                                        <div class="ms-5">
+                                            <div class="d-flex justify-content-center ">
+                                                <p class="card-textprice text-decoration-line-through m-0 d-flex">$3.90
+                                                </p>
+                                                <div
+                                                    class="sale__number rounded d-flex justify-content-center align-items-center ms-1">
+                                                    -14 %</div>
+                                            </div>
+                                            <p class="card-title m-0 text-end">$3.40</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="oneproduct__title mb-0 me-5">Weight:</p>
+                                        <p class="value__text mb-0">1 kg</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <div class="addition__number d-flex justify-content-center align-items-center">
+                                        <div class="decrease__number">-</div>
+                                        <input class="addition__input text-center" type="number" value="1">
+                                        <div class="increase__number">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4  d-block d-md-none">
+                            <div class="bag__prodmob bagprod__sumup pb-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/img/Nuts/img__walnuts.png" alt="">
+                                    <div class="form-check d-flex justify-content-start align-items-center p-0 ms-3">
+                                        <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="d-flex justify-content-between my-3">
+                                        <p class="oneproduct__title mb-0">Name:</p>
+                                        <p class="text-uppercase value__text text-start ms-5 mb-0">Walnuts</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="oneproduct__title mb-0">Price:</p>
+                                        <div class="ms-5">
+                                            <p class="card-title m-0 text-end">$3.20</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="oneproduct__title mb-0 me-5">Weight:</p>
+                                        <p class="value__text mb-0">300 g</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <div class="addition__number d-flex justify-content-center align-items-center">
+                                        <div class="decrease__number">-</div>
+                                        <input class="addition__input text-center" type="number" value="1">
+                                        <div class="increase__number">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4  d-block d-md-none">
+                            <div class="bag__prodmob bagprod__sumup pb-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/img/Nuts/imgbin_peanut-png 1.png" alt="">
+                                    <div class="form-check d-flex justify-content-start align-items-center p-0 ms-3">
+                                        <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="d-flex justify-content-between my-3">
+                                        <p class="oneproduct__title mb-0">Name:</p>
+                                        <p class="text-uppercase value__text text-start ms-5 mb-0">Pine nut</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="oneproduct__title mb-0">Price:</p>
+                                        <div class="ms-5">
+                                            <div class="d-flex justify-content-center ">
+                                                <p class="card-textprice text-decoration-line-through m-0 d-flex">$5.30
+                                                </p>
+                                                <div
+                                                    class="sale__number rounded d-flex justify-content-center align-items-center ms-1">
+                                                    -10 %</div>
+                                            </div>
+                                            <p class="card-title m-0 text-end">$4.80</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="oneproduct__title mb-0 me-5">Weight:</p>
+                                        <p class="value__text mb-0">500 g</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <div class="addition__number d-flex justify-content-center align-items-center">
+                                        <div class="decrease__number">-</div>
+                                        <input class="addition__input text-center" type="number" value="1">
+                                        <div class="increase__number">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4  d-block d-md-none">
+                            <div class="bag__prodmob bagprod__sumup pb-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/img/Nuts/img__chestnut.png" alt="">
+                                    <div class="form-check d-flex justify-content-start align-items-center p-0 ms-3">
+                                        <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="d-flex justify-content-between my-3">
+                                        <p class="oneproduct__title mb-0">Name:</p>
+                                        <p class="text-uppercase value__text text-start ms-5 mb-0">Chestnut</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="oneproduct__title mb-0">Price:</p>
+                                        <div class="ms-5">
+                                            <p class="card-title m-0 text-end">$4.70</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="oneproduct__title mb-0 me-5">Weight:</p>
+                                        <p class="value__text mb-0">200 g</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <div class="addition__number d-flex justify-content-center align-items-center">
+                                        <div class="decrease__number">-</div>
+                                        <input class="addition__input text-center" type="number" value="1">
+                                        <div class="increase__number">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4  d-block d-md-none">
+                            <div class="bag__prodmob bagprod__sumup pb-3">
+                                <div class="d-flex justify-content-center">
+                                    <img src="/img/Nuts/img__macadamia.png" alt="">
+                                    <div class="form-check d-flex justify-content-start align-items-center p-0 ms-3">
+                                        <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="d-flex justify-content-between my-3">
+                                        <p class="oneproduct__title mb-0">Name:</p>
+                                        <p class="text-uppercase value__text text-start ms-5 mb-0">Macadamia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <p class="oneproduct__title mb-0">Price:</p>
+                                        <div class="ms-5">
+                                            <p class="card-title m-0 text-end">$7.30</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="oneproduct__title mb-0 me-5">Weight:</p>
+                                        <p class="value__text mb-0">100 g</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <div class="addition__number d-flex justify-content-center align-items-center">
+                                        <div class="decrease__number">-</div>
+                                        <input class="addition__input text-center" type="number" value="1">
+                                        <div class="increase__number">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 d-none d-md-block">
+                            <table class="bag__products table">
+                                <thead>
+                                    <tr class="bagprod__header text-center">
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">
+                                            Prise</th>
+                                        <th class="text-center" scope="col">Weight</th>
+                                        <th class="text-center" scope="col">Number</th>
+                                        <th class="text-end" scope="col">Choise</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bag__oneproduct text-center">
+                                        <th scope="row"><img src="/img/Nuts/img__almond.png" width="76px" height="67px"
+                                                alt="">
+                                        </th>
+                                        <td class="text-uppercase oneproduct__name">Almond</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="card-textprice text-decoration-line-through m-0 d-flex">$3.90
+                                                </p>
+                                                <div
+                                                    class="sale__number rounded d-flex justify-content-center align-items-center ms-1">
+                                                    -14 %</div>
+                                            </div>
+                                            <p class="card-title m-0">$3.40</p>
+                                        </td>
+                                        <td class="text-center">1 kg</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div
+                                                    class="addition__number d-flex justify-content-center align-items-center">
+                                                    <div class="decrease__number">-</div>
+                                                    <input class="addition__input text-center" type="number" value="1">
+                                                    <div class="increase__number">+</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="form-check d-flex justify-content-end align-items-center p-0 me-3">
+                                                <input class="form-check-input shadow-none m-0" type="checkbox"
+                                                    value="1" id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr class="bag__oneproduct text-center">
+                                        <th scope="row"><img src="/img/Nuts/img__walnuts.png" width="76px" height="67px"
+                                                alt="">
+                                        </th>
+                                        <td class="text-uppercase oneproduct__name">Walnuts</td>
+                                        <td>
+                                            <p class="card-title m-0">$3.20</p>
+                                        </td>
+                                        <td class="text-center">300 g</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div
+                                                    class="addition__number d-flex justify-content-center align-items-center">
+                                                    <div class="decrease__number">-</div>
+                                                    <input id="additionInput" class="addition__input text-center"
+                                                        type="number" value="1">
+                                                    <div class="increase__number">+</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="form-check d-flex justify-content-end align-items-center p-0 me-3">
+                                                <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr class="bag__oneproduct text-center">
+                                        <th scope="row"><img src="/img/Nuts/imgbin_peanut-png 1.png" width="76px"
+                                                height="67px" alt="">
+                                        </th>
+                                        <td class="text-uppercase oneproduct__name">Pine nut</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="card-textprice text-decoration-line-through m-0 d-flex">$5.30
+                                                </p>
+                                                <div
+                                                    class="sale__number rounded d-flex justify-content-center align-items-center ms-1">
+                                                    -10 %</div>
+                                            </div>
+                                            <p class="card-title m-0">$4.80</p>
+                                        </td>
+                                        <td class="text-center">500 g</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div
+                                                    class="addition__number d-flex justify-content-center align-items-center">
+                                                    <div class="decrease__number">-</div>
+                                                    <input class="addition__input text-center" type="number" value="1">
+                                                    <div class="increase__number">+</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="form-check d-flex justify-content-end align-items-center p-0 me-3">
+                                                <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr class="bag__oneproduct text-center">
+                                        <th scope="row"><img src="/img/Nuts/img__chestnut.png" width="76px"
+                                                height="67px" alt="">
+                                        </th>
+                                        <td class="text-uppercase oneproduct__name">Chestnut</td>
+                                        <td>
+                                            <p class="card-title m-0">$4.70</p>
+                                        </td>
+                                        <td class="text-center">200 g</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div
+                                                    class="addition__number d-flex justify-content-center align-items-center">
+                                                    <div class="decrease__number">-</div>
+                                                    <input class="addition__input text-center" type="number" value="1">
+                                                    <div class="increase__number">+</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="form-check d-flex justify-content-end align-items-center p-0 me-3">
+                                                <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr class="bag__oneproduct text-center">
+                                        <th scope="row"><img src="/img/Nuts/img__macadamia.png" width="76px"
+                                                height="67px" alt="">
+                                        </th>
+                                        <td class="text-uppercase oneproduct__name">Macadamia</td>
+                                        <td>
+                                            <p class="card-title m-0">$7.30</p>
+                                        </td>
+                                        <td class="text-center">100 g</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div
+                                                    class="addition__number d-flex justify-content-center align-items-center">
+                                                    <div class="decrease__number">-</div>
+                                                    <input class="addition__input text-center" type="number" value="1">
+                                                    <div class="increase__number">+</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div
+                                                class="form-check d-flex justify-content-end align-items-center p-0 me-3">
+                                                <input class="form-check-input shadow-none m-0" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="bag__summary col-lg-12">
+                        <h3 class="p-4 m-0">Summary</h3>
+                        <div class="bagline__entaerly"></div>
+                        <div class="px-4 pt-2 pb-4">
+                            <table class="table m-0">
+                                <tbody>
+                                    <tr class="bagprod__sumup">
+                                        <td>Almond</td>
+                                        <th class="text-end" scope="row">$3.40</th>
+                                    </tr>
+                                    <tr class="bagprod__sumup">
+                                        <td>Walnuts</td>
+                                        <th class="text-end" scope="row">$3.20</th>
+                                    </tr>
+                                    <tr class="bagprod__sumup">
+                                        <td>Pine nut</td>
+                                        <th class="text-end" scope="row">$4.80</th>
+                                    </tr>
+                                    <tr class="bagprod__sumup">
+                                        <td>Chestnut</td>
+                                        <th class="text-end" scope="row">$4.70</th>
+                                    </tr>
+                                    <tr class="bagprod__sumup">
+                                        <td>Macadamia</td>
+                                        <th class="text-end" scope="row">$7.30</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bagprod__sumup">
+                                <a class="bagprod__set d-flex justify-content-between p-2" data-bs-toggle="collapse"
+                                    href="#collapseSet" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <strong class="sumup__set">Set 1</strong>
+                                    <strong class="sumup__setprice">$12.40</strong>
+                                </a>
+                                <div class="collapse" id="collapseSet">
+                                    <div class="set__content card card-body px-2 pb-0">
+                                        <div class="setprod d-flex justify-content-between">
+                                            <p class="setprod__name">Almond, Walnuts, Pine Nut </p>
+                                            <p class="setprod__value">$7.40</p>
+                                        </div>
+                                        <div class="setprod d-flex justify-content-between">
+                                            <p class="setprod__name">Square wrap</p>
+                                            <p class="setprod__value">$4</p>
+                                        </div>
+                                        <div class="setprod d-flex justify-content-between">
+                                            <p class="setprod__name">Weight</p>
+                                            <p class="setprod__value">2.4 kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary__total d-flex justify-content-between align-items-center p-5">
+                        <h3>Total</h3>
+                        <h4>$35.80</h4>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="cart2.html" class="btn__primary " role="button">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 text-center text-lg-start">
+                    <a href="index.html"><img src="/img/icon/logo__general.svg" alt=""></a>
+                    <p class="sub__logo mt-3">A global company that specializes in <br> all types of nuts and
+                        delivers
+                        them
+                        all <br> over the
+                        world</p>
+                    <a class="sub-text" href="#">
+                        <p>nute.sall@netex</p>
+                    </a>
+                </div>
+                <div class=" col-12 col-lg-7 mb-3 mb-lg-0">
+                    <nav class="navbar navbar-expand-sm ">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse d-flex justify-content-center justify-content-lg-start"
+                                id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link" aria-current="page" href="all__kinds.html">All kinds</a>
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center">
+                    <div class="social__network position-relative">
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-0 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__email.svg" width="13px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-50 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__telega.svg" width="14px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center position-absolute top-50 start-100 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__facebook.svg" width="7.52px" alt=""></a>
+                    </div>
+                </div>
+                <div class="p-2 text-center mt-4 mt-lg-0">
+                    <div class="footer__linear "></div>
+                    <p class="my-3"><span class="footer__nuts">© Nuts.</span> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4b23c663e0.js" crossorigin="anonymous"></script>
+    <script src="Bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/anime.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.0.0/nouislider.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.0.4/wNumb.min.js'></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

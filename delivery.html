@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="Bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/noUiSlider-15.1.1/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Delivery</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container align-self-center">
+                        <a class="navbar-brand me-auto" href="index.html"><img src="/img/icon/logo__general.svg"
+                                alt=""></a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center justify-content-md-between"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mx-0 mx-md-5 mb-lg-0 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="all__kinds.html">All kinds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" id="btnContact" class="btn__contact me-4" role="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="@mdo">Contact us</a>
+                                <a href="cart.html"
+                                    class="cart__elipse d-flex justify-content-center align-items-center position-relative ">
+                                    <span class="cart__badge position-absolute rounded-circle bg-danger"><span
+                                            class="visually-hidden">непрочитанные сообщения</span></span>
+                                    <img src="/img/icon/cart__general.svg" width="18px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contactus__modal modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="contactus__content modal-content">
+                <div class="contactus__header modal-header">
+                    <button type="button" class="contactus__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="contactus__body modal-body pb-0">
+                    <form class="pb-0">
+                        <img class="img-fluid rounded mx-auto d-block mb-4" src="/img/icon/illustration__icon.svg"
+                            width="261px" alt="">
+                        <div class="contactus__form ">
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Email:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/159-email 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="email" value="">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="checkout__name mb-0">Comment:</p>
+                                <div class="contactus__inputgroup input-group d-flex  align-items-center">
+                                    <span class="part__input d-flex ps-3 pe-2"><img class="icon__input"
+                                            src="/img/icon/Inputs/162-edit 1.svg" alt=""></span>
+                                    <input class="checkout__input form-control shadow-none" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactus__footer modal-footer row text-center">
+                    <div class="m-0 col-12"><button type=" button"
+                            class="contactus__btnmodal btn btn-primary  m-0 text">Send</button></div>
+                    <div class="contactus__text col-12 m-0 mt-2">
+                        <p>Our specialists work 24/7 especially for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our delivery philosophy -->
+    <section class="bg-back">
+        <div class="container">
+            <div class="row d-flex align-items-lg-center">
+                <div class="col-5 d-flex justify-content-lg-end ">
+                    <img data-aos="fade-right" class="img-fluid img-philosophy d-none d-lg-block"
+                        src="/img/delivery__psyhology.png" alt="">
+                </div>
+                <div data-aos="fade-left" class="col-12 col-lg-6 offset-xl-1 text-center text-lg-start">
+                    <h2 class="m-0">Our <span class="excretion__piece">delivery philosophy</span></h2>
+                    <p class="dilevery__subtext mt-3 mb-5 mt-xl-4 mb-xl-5">We understand the importance of processing
+                        your order
+                        as
+                        quickly
+                        as possible. We are
+                        also people
+                        who buy things on the Internet and love to receive orders right away ! With this in mind, we
+                        will immediately package and ship your order so that you can receive it as soon as possible.</p>
+                    <a href="all__kinds.html" class="btn__primary" role="button">Go to product</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery -->
+    <section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div data-aos="fade-right" class="row text-center text-lg-start">
+                    <div class="col-12">
+                        <h2>Delivery</h2>
+                        <p class="subtitle__text">We have delivery all over Ukraine</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center justify-content-lg-start">
+                    <div data-aos="fade-up" data-aos-delay="250" class="our__carriers col-md-5 col-xl-3 ms-0 me-xl-5">
+                        <div class="carriers__top row d-flex justify-content-between align-items-center p-3">
+                            <div class="img__newpost col-6 p-0">
+                                <img src="/img/img__newpost.svg" alt="">
+                            </div>
+                            <div class="duration__delivery col-6 d-flex justify-content-center align-items-center">
+                                1-3 days
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0">only on <strong>full</strong> prepayment</p>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0">cost of delivery <strong>$20</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="450"
+                        class="our__carriers col-md-5 col-xl-3 my-md-0 my-4 ms-md-5 mx-xl-5">
+                        <div class="carriers__top row d-flex justify-content-between align-items-center p-3">
+                            <div class="img__newpost col-6 p-0">
+                                <img src="/img/img__justin.svg" alt="">
+                            </div>
+                            <div class="duration__delivery col-6 d-flex justify-content-center align-items-center">
+                                2-5 days
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0"><strong>partial</strong> prepayment</p>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0">cost of delivery <strong>$17</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="650"
+                        class="our__carriers col-md-5 col-xl-3 mt-md-5 mt-xl-0 ms-xl-5">
+                        <div class="carriers__top row d-flex justify-content-between align-items-center p-3">
+                            <div class="img__newpost col-6 p-0">
+                                <img src="/img/img__meest.svg" alt="">
+                            </div>
+                            <div class="duration__delivery col-6 d-flex justify-content-center align-items-center">
+                                5-7 days
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0">C.O.D.</p>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="check">
+                                    <img src="/img/img__check.svg" alt="">
+                                </div>
+                                <p class="ms-3 mb-0">cost of delivery <strong>$18</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="bg-back">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-7 col-lg-5">
+                    <div class="row text-center text-md-start">
+                        <div class="col-12">
+                            <h2 data-aos="fade-right" data-aos-delay="500">Payment</h2>
+                            <p data-aos="fade-right" data-aos-delay="500" class="subtitle__text">We support a wide
+                                variety of payment options</p>
+                        </div>
+                        <div data-aos="fade-down" class="col-12">
+                            <div id="paymentClause" class="payment__clause d-flex align-items-center mb-4 text-start">
+                                <div id="clausePoint" class="clause__point "></div>
+                                <p class="clause__text mx-4 mb-0 ">Payment by card (Visa, MasterCard)
+                                </p>
+                            </div>
+                            <div id="paymentClause" class="payment__clause d-flex align-items-center mb-4 text-start">
+                                <div id="clausePoint" class="clause__point "></div>
+                                <p class="clause__text mx-4 mb-0 ">Payment by cash </p>
+                            </div>
+                            <div id="paymentClause" class="payment__clause d-flex align-items-center mb-4 text-start">
+                                <div id="clausePoint" class="clause__point "></div>
+                                <p class="clause__text mx-4 mb-0">Full prepayment to the card</p>
+                            </div>
+                            <div id="paymentClause" class="payment__clause d-flex align-items-center mb-4 text-start">
+                                <div id="clausePoint" class="clause__point "></div>
+                                <p class="clause__text mx-4 mb-0">Payment to the courier on site</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-5 col-lg-7">
+                    <img data-aos="fade-up-left" class="img-fluid d-none d-md-block" src="/img/img__payment.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div data-aos="fade-up" id="form" class="col-12 main__form text-center p-5">
+                    <h2>If you have any questions, write, we <br> will answer them</h2>
+                    <p>Our specialists work 24/7 especially for you</p>
+                    <div class="form__lowpart d-lg-flex justify-content-center mt-4 mt-lg-5">
+                        <div class="col-12 col-lg-3 form-floating ">
+                            <input type="email" class="form-control shadow-none" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label class="text-start" for="floatingInput">Email</label>
+                        </div>
+                        <div class="col-12 col-lg-3 form-floating mt-2 mt-lg-0 mx-lg-4">
+                            <textarea class="form-control shadow-none" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label class="text-start" for="floatin gTextarea">Your messege</label>
+                        </div>
+                        <div
+                            class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0">
+                            <button type="submit" class="form__button d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#formModal">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-3 text-center text-lg-start">
+                    <a href="index.html"><img src="/img/icon/logo__general.svg" alt=""></a>
+                    <p class="sub__logo mt-3">A global company that specializes in <br> all types of nuts and
+                        delivers
+                        them
+                        all <br> over the
+                        world</p>
+                    <a class="sub-text" href="#">
+                        <p>nute.sall@netex</p>
+                    </a>
+                </div>
+                <div class=" col-12 col-lg-7 mb-3 mb-lg-0">
+                    <nav class="navbar navbar-expand-sm ">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse d-flex justify-content-center justify-content-lg-start"
+                                id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link" aria-current="page" href="all__kinds.html">All kinds</a>
+                                    <a class="nav-link " href="all__sets.html">All sets</a>
+                                    <a class="nav-link " href="delivery.html">Delivery</a>
+                                    <a class="nav-link" href="about__us.html">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center">
+                    <div class="social__network position-relative">
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-0 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__email.svg" width="13px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center me-4 position-absolute top-50 start-50 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__telega.svg" width="14px" alt=""></a>
+                        <a class="elipse__network d-flex justify-content-center align-items-center position-absolute top-50 start-100 translate-middle-y"
+                            href="#"><img src="/img/icon/icon__facebook.svg" width="7.52px" alt=""></a>
+                    </div>
+                </div>
+                <div class="p-2 text-center mt-4 mt-lg-0">
+                    <div class="footer__linear "></div>
+                    <p class="my-3"><span class="footer__nuts">© Nuts.</span> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="form__modal modal fade з-0" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="formmod__dialog modal-dialog modal-dialog-centered">
+            <div class="formmod__content modal-content">
+                <div class="formmod__header modal-header">
+                    <button type="button" class="formmod__btnclose btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="formmod__body modal-body text-center pb-4">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div id="formmodCheckbox"
+                            class="formmod__checkbox d-flex justify-content-center align-items-center">
+                            <div class="checkbox__mod"><img src="/img/icon/icon__incheckbox.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <h3 id="checkBoxTitle">Your message has been sent</h3>
+                    <p id="formmodText" class="formmod__text mb-0">On average, we respond within 24 hours after sending
+                        a message.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4b23c663e0.js" crossorigin="anonymous"></script>
+    <script src="Bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
